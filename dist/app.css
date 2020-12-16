@@ -15,8 +15,10 @@
 header {
   height: 90px;
   width: 100%;
+  background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding: 18px;
+  position: fixed;
 }
 
 header .nav-top {
@@ -124,6 +126,10 @@ footer .footer-menu .language:before {
 
 footer .footer-menu .language select {
   width: 198px;
+}
+
+section {
+  padding-top: 90px;
 }
 
 section .container h2 {

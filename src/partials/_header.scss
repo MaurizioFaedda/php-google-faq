@@ -1,8 +1,10 @@
 header{
     height: 90px;
     width: 100%;
+    background-color: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: $spacing;
+    position: fixed;
     .nav-top{
         width: 100%;
         display: flex;
