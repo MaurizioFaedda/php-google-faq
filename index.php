@@ -88,10 +88,16 @@
 
         <header>
             <div class="nav-top">
-                <div class="logo">
+                <div class="nav-top-left">
+                    <span></span>
+                    <h3>Privacy e termini</h3>
+
+                    <div>
 
                 </div>
-                <div>
+                <div class="nav-top-right">
+
+                </div>
 
                 </div>
             </div>
@@ -128,7 +134,7 @@
         </section>
 
         <footer>
-            <div class="footer-menu">
+            <div class="footer-menu container">
                 <ul>
                     <?php for ($i=0; $i < count($footer_menu) ; $i++) { ?>
                         <li> <?php echo $footer_menu[$i] ?></li>

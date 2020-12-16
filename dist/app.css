@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 9px;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
@@ -8,6 +8,41 @@
 .container {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+header {
+  height: 200px;
+  width: 100%;
+}
+
+header .nav-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .nav-top .nav-top-left {
+  width: 100%;
+  display: flex;
+}
+
+header .nav-top .nav-top-left span::before {
+  content: url("https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg");
+}
+
+header .nav-top .nav-top-left h3 {
+  color: #5f6368;
+}
+
+header .nav-bottom .menu ul {
+  list-style-type: none;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .nav-bottom .menu ul li {
+  margin: 0;
+  color: #5f6368;
 }
 
 section h2 {

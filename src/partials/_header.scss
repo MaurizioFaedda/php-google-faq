@@ -1,0 +1,38 @@
+header{
+    height: 200px;
+    width: 100%;
+    .nav-top{
+        display: flex;
+        justify-content: space-between;
+
+        .nav-top-left{
+            width: 100%;
+            display: flex;
+            span{
+
+                &::before{
+                    content: url($main_logo);
+                }
+            }
+            h3{
+                color: $nav_text_color;
+            }
+
+        }
+
+    }
+    .nav-bottom{
+        .menu{
+            ul{
+                list-style-type: none;
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+                li{
+                    margin: 0;
+                    color: $nav_text_color;
+                }
+            }
+        }
+    }
+}
