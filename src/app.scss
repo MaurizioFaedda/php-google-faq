@@ -1,9 +1,6 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-h2 {
-    color: red;
-}
+@import 'partials/_variables';
+@import 'partials/_mixins';
+@import 'partials/_common';
+@import 'partials/_header';
+@import 'partials/_footer';
+@import 'partials/_section';

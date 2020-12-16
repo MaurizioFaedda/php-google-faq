@@ -65,6 +65,8 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="dist/app.css">
     </head>
     <body>
@@ -74,20 +76,22 @@
         </header>
 
         <section>
+            <div class="container">
+                <?php foreach ($faqs as $key => $value) { ?>
+                    <h2>
+                        <?php echo $value['Question']; ?>
+                    </h2>
 
-            <?php foreach ($faqs as $key => $value) { ?>
-                <h2>
-                    <?php echo $value['Question']; ?>
-                </h2>
-
-                <?php for ($i=0; $i <count($value['Answer']) ; $i++) { ?>
-                    <p>
-                        <?php echo $value['Answer'][$i]; ?>
-                    </p>
+                    <?php for ($i=0; $i <count($value['Answer']) ; $i++) { ?>
+                        <p>
+                            <?php echo $value['Answer'][$i]; ?>
+                        </p>
+                        <?php
+                    } ?>
                     <?php
                 } ?>
-                <?php
-            } ?>
+
+            </div>
 
         </section>
 
