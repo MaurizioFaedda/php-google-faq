@@ -1,5 +1,7 @@
+@charset "UTF-8";
+
 * {
-  margin: 9px;
+  margin: 5.4px;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
@@ -11,26 +13,55 @@
 }
 
 header {
-  height: 200px;
+  height: 100px;
   width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 header .nav-top {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 header .nav-top .nav-top-left {
-  width: 100%;
+  width: 50%;
   display: flex;
+}
+
+header .nav-top .nav-top-left span {
+  padding-top: 5px;
 }
 
 header .nav-top .nav-top-left span::before {
   content: url("https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg");
+  padding: 18px 0;
 }
 
 header .nav-top .nav-top-left h3 {
   color: #5f6368;
+  font-size: 22px;
+}
+
+header .nav-top .nav-top-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header .nav-top .nav-top-right span:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F0C9";
+  color: #5f6368;
+}
+
+header .nav-top .nav-top-right .avatar {
+  width: 30px;
+  height: 30px;
+  background-color: lightblue;
+  border-radius: 50%;
 }
 
 header .nav-bottom .menu ul {
@@ -43,6 +74,7 @@ header .nav-bottom .menu ul {
 header .nav-bottom .menu ul li {
   margin: 0;
   color: #5f6368;
+  font-weight: 500;
 }
 
 section h2 {
