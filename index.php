@@ -56,9 +56,24 @@
                 anche l'indirizzo Internet, o URL, della pagina dei risultati di ricerca sotto forma di URL referrer. Talvolta, l'URL della pagina dei risultati di ricerca potrebbe contenere la query di ricerca che hai inserito. Se utilizzi la ricerca SSL (la funzione di ricerca criptata di Google), nella maggior parte dei casi i termini di ricerca non vengono inviati come parte dell'URL negli URL referrer. Questo comportamento può fare eccezione, ad esempio se utilizzi alcuni browser meno diffusi. Ulteriori informazioni sulla ricerca SSL sono disponibili qui. Le query di ricerca o le informazioni contenute nell'URL referrer potrebbero essere disponibili mediante Google Analytics o un'API (Application Programming Interface). Inoltre, gli inserzionisti potrebbero ricevere informazioni relative all' esatte parole chiave che hanno determinato il clic su un annuncio.",
 
             ],
-        ],
-    ]
+        ]
+    ];
+    $nav_menu = [
+        "Introduzione",
+        "Norme sulla privacy",
+        "Termini di servizio",
+        "Tecnologie",
+        "Domande frequenti",
+    ];
+    $footer_menu = [
+        "Google",
+        "Tutto su Google",
+        "Privacy",
+        "Termini",
+    ];
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -72,7 +87,24 @@
     <body>
 
         <header>
+            <div class="nav-top">
+                <div class="logo">
 
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="nav-bottom">
+                <div class="menu">
+                    <ul>
+                        <?php for ($i=0; $i < count($nav_menu) ; $i++) { ?>
+                            <li><?php echo $nav_menu[$i]; ?></li>
+                            <?php
+                        } ?>
+                    </ul>
+                </div>
+            </div>
         </header>
 
         <section>
@@ -96,7 +128,14 @@
         </section>
 
         <footer>
-
+            <div class="footer-menu">
+                <ul>
+                    <?php for ($i=0; $i < count($footer_menu) ; $i++) { ?>
+                        <li> <?php echo $footer_menu[$i] ?></li>
+                        <?php
+                    } ?>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
