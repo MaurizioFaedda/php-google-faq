@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 * {
-  margin: 5.4px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
@@ -13,9 +13,10 @@
 }
 
 header {
-  height: 100px;
+  height: 90px;
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 18px;
 }
 
 header .nav-top {
@@ -39,8 +40,9 @@ header .nav-top .nav-top-left span::before {
 }
 
 header .nav-top .nav-top-left h3 {
-  color: #5f6368;
+  color: rgba(0, 0, 0, 0.6);
   font-size: 22px;
+  padding-left: 5.4px;
 }
 
 header .nav-top .nav-top-right {
@@ -53,8 +55,10 @@ header .nav-top .nav-top-right {
 header .nav-top .nav-top-right span:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\F0C9";
-  color: #5f6368;
+  content: "\F00A";
+  color: rgba(0, 0, 0, 0.6);
+  padding-right: 18px;
+  font-size: 20px;
 }
 
 header .nav-top .nav-top-right .avatar {
@@ -66,24 +70,74 @@ header .nav-top .nav-top-right .avatar {
 
 header .nav-bottom .menu ul {
   list-style-type: none;
-  width: 60%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
+  padding-top: 10.8px;
 }
 
 header .nav-bottom .menu ul li {
   margin: 0;
-  color: #5f6368;
-  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+  font-size: 14px;
 }
 
-section h2 {
+footer {
+  width: 100%;
+  background-color: #f5f5f5;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-menu .ul-menu {
+  width: 50%;
+}
+
+footer .footer-menu .ul-menu ul {
+  list-style-type: none;
+  display: flex;
+}
+
+footer .footer-menu .ul-menu ul li {
+  color: rgba(61, 61, 61, 0.8);
+  padding: 12.6px 9px 12.6px 0;
+  font-size: 14px;
+}
+
+footer .footer-menu .language {
+  align-items: center;
+  padding: 12.6px;
+}
+
+footer .footer-menu .language:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F0AC";
+  color: #3367d6;
+  padding-right: 9px;
+}
+
+footer .footer-menu .language select {
+  width: 198px;
+}
+
+section .container h2 {
   color: #3c4043;
   padding: 72px 0 10.8px 0;
 }
 
-section p {
+section .container p {
   color: rgba(0, 0, 0, 0.87);
   padding: 18px 0;
+}
+
+section .container p a {
+  text-decoration: none;
+  color: #3367d6;
 }
 

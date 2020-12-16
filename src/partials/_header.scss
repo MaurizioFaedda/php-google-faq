@@ -1,7 +1,8 @@
 header{
-    height: 100px;
+    height: 90px;
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: $spacing;
     .nav-top{
         width: 100%;
         display: flex;
@@ -21,6 +22,7 @@ header{
             h3{
                 color: $nav_text_color;
                 font-size:22px;
+                padding-left: $spacing*0.3;
             }
 
         }
@@ -31,7 +33,9 @@ header{
             justify-content: flex-end;
             align-items: center;
             span:before{
-                @include fontawesome ("\f0c9", $nav_text_color)
+                @include fontawesome ("\f00a", $nav_text_color);
+                padding-right: $spacing;
+                font-size: 20px;
             }
             .avatar{
                 width: 30px;
@@ -47,13 +51,15 @@ header{
         .menu{
             ul{
                 list-style-type: none;
-                width: 60%;
+                width: 50%;
                 display: flex;
                 justify-content: space-between;
+                padding-top: $spacing*0.6;
                 li{
                     margin: 0;
                     color: $nav_text_color;
-                    font-weight: 500;
+                    font-weight: 600;
+                    font-size: 14px;
                 }
             }
         }
